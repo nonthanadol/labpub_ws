@@ -1,0 +1,10 @@
+<launch>
+
+<!-- MoveBaseSeq node launch and Points Sequence ROS Parameters Loading -->
+
+    <!--Run move_base_seqs node-->
+        <node pkg="turtlebot3_navgo" type="move2_file.py" name="move_base_seq" output="screen">
+            <rosparam file="$(find turtlebot3_navgo)/path/path1.yaml"/>
+        </node>
+
+</launch>
